@@ -1,6 +1,5 @@
 import React, { useEffect, useContext } from "react";
 import AddEditTask from '../addEditTask/AddEditTask';
-import "./dayList.css"
 import { StoreContext } from '../../context/StoreContext';
 import { DELETE_JOB } from '../../types/types';
 

@@ -31,7 +31,6 @@ const Calendar = ({ value, onChange }) => {
     }
     return a;
   }
-console.log(value._d)
   const isSelected = (day) => {
     return value.isSame(day, "day");
   }
@@ -57,7 +56,7 @@ console.log(value._d)
   const xIdDay = idDay.split(" ")[2];
   const xIdMonth = idDay.split(" ")[1];
   const xIdYear = idDay.split(" ")[3];
-const wholeId = (xIdDay+ xIdMonth + xIdYear).toString();
+  const wholeId = (xIdDay+ xIdMonth + xIdYear).toString();
 
   return (
     <div className="calendar container">
