@@ -9,7 +9,6 @@ const StoreContextProvider = (props) => {
 
   const [store, dispatch] = useReducer(storeReducer, INITAL_STATE);
 
-  console.log("store w context", store);
   return (
     <StoreContext.Provider
       value={{

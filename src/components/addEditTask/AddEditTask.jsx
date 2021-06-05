@@ -6,7 +6,7 @@ import { ADD_JOB, EDIT_JOB } from "../../types/types";
 import { StoreContext } from '../../context/StoreContext';
 
 
-const AddEditIngredient = ({ ...props}) => {
+const AddEditTask = ({ ...props}) => {
   const { dispatch } = useContext(StoreContext);
 
   useEffect(() => {
@@ -21,6 +21,8 @@ const AddEditIngredient = ({ ...props}) => {
     }
   }, []);
 
+  console.log(props.job)
+
   const [state, setState] = useState({
     todo: "",
     id: "",
@@ -34,7 +36,6 @@ const AddEditIngredient = ({ ...props}) => {
     }); 
 
   };
-  console.log("event", state)
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -59,8 +60,6 @@ const AddEditIngredient = ({ ...props}) => {
     }
     return newJob;
   };
-
-
 
   return (
     <div>
@@ -97,4 +96,4 @@ const AddEditIngredient = ({ ...props}) => {
   );
 };
 
-export default AddEditIngredient;
+export default AddEditTask;
