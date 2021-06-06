@@ -1,7 +1,7 @@
 import React, { useReducer, createContext } from "react";
 import { storeReducer } from "../reducers/storeReducers";
 
-const INITAL_STATE ={jobs:[]};
+const INITAL_STATE ={ jobs:[] };
 
 export const StoreContext = createContext();
 

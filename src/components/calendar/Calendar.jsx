@@ -52,11 +52,11 @@ const Calendar = ({ value, onChange }) => {
   
   const dayNames = ["s", "m", "t", "w", "t", "f", "s"];
 
-  const idDay = (value._d.toString());
-  const xIdDay = idDay.split(" ")[2];
-  const xIdMonth = idDay.split(" ")[1];
-  const xIdYear = idDay.split(" ")[3];
-  const wholeId = (xIdDay+ xIdMonth + xIdYear).toString();
+  const dataDay = (value._d.toString());
+  const dateDay = dataDay.split(" ")[2];
+  const dateMonth = dataDay.split(" ")[1];
+  const dateYear = dataDay.split(" ")[3];
+  const wholeId = (dateDay+ dateMonth + dateYear).toString();
 
   return (
     <div className="calendar container">
@@ -86,11 +86,10 @@ const Calendar = ({ value, onChange }) => {
           </div>
         ))}
       </div>
-      <DayList day={xIdDay} id={wholeId} />
+      <DayList day={dateDay + dateMonth} id={wholeId} />
     </div>
   );
 }
-
 
 export default Calendar;
 
