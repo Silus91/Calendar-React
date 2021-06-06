@@ -1,4 +1,6 @@
 .card {
   justify-content: space-between;
   display: flex;
+  padding: 5px;
+  text-transform: capitalize;
 }

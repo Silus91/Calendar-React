@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
-import CalendarHeader from "./header";
+import CalendarHeader from "./Header";
 import "./styles.css";
 import DayList from '../dayList/DayList';
 import M from "materialize-css";

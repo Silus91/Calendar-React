@@ -18,7 +18,7 @@ const DayList = ({ ...props}) => {
       payload: id,
     });
   }
-    
+
   const filteredJobs = store.jobs.filter((job) => job.dayId === props.id);
 
   return (

@@ -5,7 +5,6 @@ import M from "materialize-css";
 import { ADD_JOB } from "../../types/types";
 import { StoreContext } from '../../context/StoreContext';
 
-
 const AddTask = (props) => {
   const { dispatch } = useContext(StoreContext);
 
