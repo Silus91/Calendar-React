@@ -40,12 +40,12 @@ const AddTask = (props) => {
 
   return (
     <div>
-      <a
+      <button
         className='btn modal-trigger'
         data-target={props.id}
       >
         Add Job
-      </a>
+      </button>
       <div id={props.id} className='modal'> 
        <form onSubmit={handleSubmit}>
           <div className='modal-content'>
