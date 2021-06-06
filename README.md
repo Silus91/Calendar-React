@@ -9,4 +9,4 @@ yarn start
 
 Or you can see live version of this App at
 
-https://calendar-reactjs.herokuapp.com/
+https://calendar-reactjs-app.herokuapp.com/
